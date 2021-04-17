@@ -30,6 +30,14 @@ const routes: Routes = [
     redirectTo: 'Inicio',
     pathMatch: 'full'
   },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'check-box',
+    loadChildren: () => import('./pages/check-box/check-box.module').then( m => m.CheckBoxPageModule)
+  },
 
   
 ];
